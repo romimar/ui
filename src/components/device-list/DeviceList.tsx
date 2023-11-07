@@ -14,9 +14,9 @@ type uiDevice = {
         abbrev: string,
         name: string,
     };
-    icon: [
+    icon: {
         id: string,
-    ];
+    };
 }
 
 type uiData = {
@@ -40,7 +40,6 @@ function DeviceList() {
     }
 
     useEffect(() => {
-        console.log("here")
         getJson();
     }, []);
 
@@ -63,9 +62,7 @@ function DeviceList() {
                                     return (
                                         <tr key={device.id}>
                                             <td>
-                                                <img 
-                                                    src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_25x25.png`}
-                                                />
+                                                <img src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_25x25.png`} />
                                             </td>
                                             <td>
                                                 <Link to={`/device?id=${device.id}`} key={device.id}>
