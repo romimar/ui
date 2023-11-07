@@ -1,0 +1,40 @@
+.header {
+    max-width: 1536px;
+    min-width: 320px;
+    background-color: #F4F5F6;
+    color: #808893;
+    padding: 0 32px 0 10px;
+    font-size: 16px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 60px 100px 1fr;
+    grid-template-areas: "logo devices account";
+}
+
+.logo {
+    grid-area: logo;
+
+    align-self: center;
+    justify-self: start;
+}
+
+.devices {
+    grid-area: devices;
+
+    align-self: center;
+    justify-self: start;
+}
+
+.account {
+    grid-area: account;
+
+    align-self: center;
+    justify-self: end;
+}
+
+.page {
+    padding: 0 32px;
+}
+  

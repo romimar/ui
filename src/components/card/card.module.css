@@ -1,0 +1,68 @@
+img {
+    padding: 10px 0;
+}
+
+.backButton {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px 6px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+
+.devCard {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-size: 14px;
+}
+
+.devImg {
+    display: flex;
+    justify-content: center;
+    background-color: #F4F5F6;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.devCaption {
+    padding-left: 20px;
+}
+
+.devName {
+    color: #808893;
+    padding-bottom: 8px;
+}
+
+.devType {
+    color: #808893;
+}
+
+dl {
+    width: 500px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin: 0;
+}
+
+dt {
+    float: left;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+ dd {
+    float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+  

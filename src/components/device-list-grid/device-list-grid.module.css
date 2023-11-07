@@ -1,0 +1,42 @@
+.grid {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid a {
+    display: block;
+}
+
+.card {
+    flex: 1 0 15%;
+    border: 1px solid #EDEDF0;
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.card img {
+    padding: 10px 0;
+}
+
+.card .device {
+    display: flex;
+    justify-content: center;
+    background-color: #F4F5F6;
+    height: 100px;
+}
+
+.card .caption {
+    padding: 8px;
+}
+
+.card .deviceName {
+    color: #50565E;
+    padding-bottom: 8px;
+}
+
+.card .deviceType {
+    color: #808893;
+    font-size: 12px;
+}

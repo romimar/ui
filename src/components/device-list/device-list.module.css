@@ -1,0 +1,15 @@
+.list {
+    margin-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #50565E;
+    font-size: 14px;
+}
+
+th, tr {
+    text-align: left;
+    border-bottom: 1px solid #EDEDF0;
+}
