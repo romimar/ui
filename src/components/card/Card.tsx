@@ -15,9 +15,9 @@ type uiDevice = {
         abbrev: string,
         name: string,
     };
-    icon: [
+    icon: {
         id: string,
-    ];
+    };
 }
 
 type uiData = {
@@ -70,9 +70,7 @@ function Card() {
                 {device ? (
                     <div key={device.id} className={styles.devCard}>
                         <div className={styles.devImg}>
-                            <img 
-                                src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_257x257.png`}
-                            />
+                            <img src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_257x257.png`} />
                         </div>
                         <div className={styles.devCaption}>
                             <h3>{device.product.name}</h3>
