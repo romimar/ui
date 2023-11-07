@@ -14,9 +14,9 @@ type uiDevice = {
         abbrev: string,
         name: string,
     };
-    icon: [
+    icon: {
         id: string,
-    ];
+    };
 }
 
 type uiData = {
@@ -53,9 +53,7 @@ function DeviceListGrid() {
                             return (
                                 <Link className={styles.card} to={`/device?id=${device.id}`} key={device.id}>
                                     <div className={styles.device}>
-                                        <img 
-                                            src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_101x101.png`}
-                                        />
+                                        <img src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_101x101.png`} />
                                     </div>
                                     <div className={styles.caption}>
                                         <div className={styles.deviceName}>{device.product.name}</div>
